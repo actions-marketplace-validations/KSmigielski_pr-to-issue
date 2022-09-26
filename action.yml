@@ -1,0 +1,13 @@
+name: 'Link PR to Issue'
+description: 'Connect PR to Issue by adding at the end of PR description resoluction command'
+branding:
+  icon: git-pull-request
+  color: yellow
+author: 'KSmigielski'
+inputs:
+  token:
+    required: true
+    description: 'Github access token'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
